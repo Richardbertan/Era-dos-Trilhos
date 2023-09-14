@@ -5,5 +5,5 @@ using UnityEngine.UI;
 
 public class madeira : MonoBehaviour
 {  
-    public static float increaseRate = 0.5f;
+    public static float increaseRate = 1f;
 }

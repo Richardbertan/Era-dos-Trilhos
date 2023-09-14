@@ -8,7 +8,7 @@ public class ouro : MonoBehaviour
     public static float increaseRate;
     void OnEnable ()
     {
-        increaseRate = 10f;
+        increaseRate = 30f;
     }
     void OnDisable ()
     {

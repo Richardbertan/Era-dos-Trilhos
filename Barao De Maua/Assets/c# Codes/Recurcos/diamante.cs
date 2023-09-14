@@ -8,7 +8,7 @@ public class diamante : MonoBehaviour
     public static float increaseRate;
     void OnEnable ()
     {
-        increaseRate = 20f;
+        increaseRate = 100f;
     }
     void OnDisable ()
     {

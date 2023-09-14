@@ -8,7 +8,7 @@ public class carvao : MonoBehaviour
     public static float increaseRate;
     void OnEnable ()
     {
-        increaseRate = 1f;
+        increaseRate = 5f;
     }
     void OnDisable ()
     {
