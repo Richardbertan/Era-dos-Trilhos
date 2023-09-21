@@ -8,13 +8,12 @@ public class Loja : MonoBehaviour
     public static int dinheiro;
     int lastMoney = 0;
     [SerializeField] Text dinhTxt;  
-    static float increaseRate;
+    public static float increaseRate;
     public static int Click;
     
     void FixedUpdate ()
     {
         dinheiro = (int) increaseRate;
-        dinheiro += Click;
         increaseRate += ((madeira.increaseRate + pedra.increaseRate + carvao.increaseRate + ferro.increaseRate + ouro.increaseRate + diamante.increaseRate) * Time.deltaTime);
         dinhTxt.text = dinheiro.ToString();
             if (dinheiro > lastMoney)
@@ -24,6 +23,7 @@ public class Loja : MonoBehaviour
             }
             if (Click > 0)
             {
+                increaseRate += Click;
                 Click = 0;
             }
     }

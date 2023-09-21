@@ -5,8 +5,6 @@ using UnityEngine;
 public class TremMove : MonoBehaviour
 {
     [SerializeField]
-    float velocity = 1;
-    [SerializeField]
     GameObject Trem;
     float countDown = 30;
     void Start()
