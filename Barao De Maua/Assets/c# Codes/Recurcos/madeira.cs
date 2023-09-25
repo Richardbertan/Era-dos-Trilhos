@@ -5,10 +5,11 @@ using UnityEngine.UI;
 
 public class madeira : MonoBehaviour
 {  
+    public static float ClickIncrease = 2f;
     public static float increaseRate = 8f;
 
     public void OnClick ()
     {
-        Loja.Click += 2;
+        Loja.Click += ClickIncrease;
     }
 }

@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class TerrenoOuro : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField]
+    GameObject cadeado;
+    [SerializeField]
+    GameObject ouro;
+    [SerializeField]
+    GameObject Button;
+    public void OnClick()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (Loja.dinheiro >= 1500)
+        {
+            Loja.increaseRate -= 1500;
+            cadeado.SetActive(false);
+            Button.SetActive(false);
+            ouro.SetActive(true);
+        }
     }
 }
