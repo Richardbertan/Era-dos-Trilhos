@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class UpgradeWood : MonoBehaviour
 {
-   public static int Price = 50;
+   public static int Price = 75;
     [SerializeField] Text PriTxt;
     void Update ()
     {
@@ -17,7 +17,7 @@ public class UpgradeWood : MonoBehaviour
         {
             madeira.increaseRate = 1.2f * madeira.increaseRate;
             Loja.increaseRate -= Price;
-            Price += 50;
+            Price += 75;
             
         }
    }

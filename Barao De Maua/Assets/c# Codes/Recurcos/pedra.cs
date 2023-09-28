@@ -8,7 +8,7 @@ public class pedra : MonoBehaviour
     public static float increaseRate;
     void OnEnable ()
     {
-        increaseRate = 30f;
+        increaseRate = 7f;
     }
     void OnDisable ()
     {

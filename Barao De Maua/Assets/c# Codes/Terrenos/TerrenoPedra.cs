@@ -12,9 +12,9 @@ public class TerrenoPedra : MonoBehaviour
     GameObject Button;
     public void OnClick()
     {
-        if (Loja.dinheiro >= 350)
+        if (Loja.dinheiro >= 375)
         {
-            Loja.increaseRate -= 350;
+            Loja.increaseRate -= 375;
             cadeado.SetActive(false);
             Button.SetActive(false);
             Pedra.SetActive(true);
