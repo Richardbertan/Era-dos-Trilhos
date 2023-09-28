@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class madeira : MonoBehaviour
 {  
     public static float ClickIncrease = 2f;
-    public static float increaseRate = 8f;
+    public static float increaseRate = 5f;
 
     public void OnClick ()
     {
