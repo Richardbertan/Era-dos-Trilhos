@@ -9,7 +9,6 @@ public class Loja : MonoBehaviour
     [SerializeField] Text dinhTxt;  
     public static float increaseRate;
     public static float Click;
-    
     void FixedUpdate ()
     {
         dinheiro = (int) increaseRate;
