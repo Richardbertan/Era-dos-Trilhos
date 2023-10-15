@@ -14,7 +14,7 @@ public class TerrenoDiam : MonoBehaviour
     {
         if (Loja.dinheiro >= 1500)
         {
-            Loja.increaseRate -= 1500;
+            Loja.dinFloat -= 1500;
             cadeado.SetActive(false);
             Button.SetActive(false);
             Dima.SetActive(true);

@@ -5,18 +5,33 @@ using UnityEngine.UI;
 
 public class UpgradeGold : MonoBehaviour
 {
-   public static int Price = 100;
+   public static int Price = 700;
+    public static float PrevPriceActive = 700f;
+    public static float PrevPrice;
+
     [SerializeField] Text PriTxt;
+
+    public static int PrevValueActive = 8;
+    public static int PrevValue;
+
     void Update ()
     {
-    PriTxt.text = Price.ToString();
+        PriTxt.text = Price.ToString();
+        print($"{Price} preco ouro");
+        print ($"{ouro.increaseRate} valor ouro");
     }
-   public void OnClick ()
-   {
+
+    public void OnClick ()
+    {
         if (Loja.dinheiro >= Price)
         {
-            ouro.increaseRate = 1.5f * ouro.increaseRate;
-            Price += 0;
+            PrevValue = (int) ouro.increaseRate;
+            ouro.increaseRate += PrevValueActive;
+            PrevValueActive = PrevValue;
+            Loja.dinFloat -= Price;
+            PrevPrice = Price;
+            Price += (int) (PrevPriceActive);
+            PrevPriceActive = PrevPrice;            
         }
    }
 }

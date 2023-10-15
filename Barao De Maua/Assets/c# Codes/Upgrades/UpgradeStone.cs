@@ -5,20 +5,33 @@ using UnityEngine.UI;
 
 public class UpgradeStone : MonoBehaviour
 {
-   public static int Price = 115;
-    [SerializeField] 
-    Text PriceTxt;
+    public static int Price = 700;
+    public static float PrevPriceActive = 700f;
+    public static float PrevPrice;
+
+    [SerializeField] Text PriTxt;
+
+    public static int PrevValueActive = 8;
+    public static int PrevValue;
+
     void Update ()
     {
-    PriceTxt.text = Price.ToString();
+        PriTxt.text = Price.ToString();
+        print($"{Price} preco pedra");
+        print ($"{pedra.increaseRate} valor pedra");
     }
-   public void OnClick ()
-   {
+
+    public void OnClick ()
+    {
         if (Loja.dinheiro >= Price)
         {
-            pedra.increaseRate = 1.2f * pedra.increaseRate;
-            Loja.increaseRate -= Price;
-            Price += 115;
+            PrevValue = (int) pedra.increaseRate;
+            pedra.increaseRate += PrevValueActive;
+            PrevValueActive = PrevValue;
+            Loja.dinFloat -= Price;
+            PrevPrice = Price;
+            Price += (int) (PrevPriceActive);
+            PrevPriceActive = PrevPrice;            
         }
    }
 }

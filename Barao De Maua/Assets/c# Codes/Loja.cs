@@ -7,16 +7,16 @@ public class Loja : MonoBehaviour
 {
     public static int dinheiro;
     [SerializeField] Text dinhTxt;  
-    public static float increaseRate;
+    public static float dinFloat;
     public static float Click;
     void FixedUpdate ()
     {
-        dinheiro = (int) increaseRate;
-        increaseRate += ((madeira.increaseRate + pedra.increaseRate + carvao.increaseRate + ferro.increaseRate + ouro.increaseRate + diamante.increaseRate) * Time.deltaTime);
+        dinheiro = (int) dinFloat;
+        dinFloat += ((madeira.increaseRate + pedra.increaseRate + carvao.increaseRate + ferro.increaseRate + ouro.increaseRate + diamante.increaseRate) * Time.deltaTime);
         dinhTxt.text = dinheiro.ToString();
             if (Click > 0)
             {
-                increaseRate += Click;
+                dinFloat += Click;
                 Click = 0;
             }
     }
