@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class UpgradeClick : MonoBehaviour
 {   
-    public static int Price = 700;
-    public static float PrevPriceActive = 700f;
+    public static int Price = 1000;
+    public static float PrevPriceActive = 1000f;
     public static float PrevPrice;
 
     [SerializeField] Text PriTxt;
 
-    public static int PrevValueActive = 8;
+    public static int PrevValueActive = 2;
     public static int PrevValue;
 
     void Update ()

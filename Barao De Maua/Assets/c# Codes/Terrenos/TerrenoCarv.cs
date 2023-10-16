@@ -10,11 +10,12 @@ public class TerrenoCarv : MonoBehaviour
     GameObject Carv;
     [SerializeField]
     GameObject Button;
+    int Price = 2000;
     public void OnClick()
     {
-        if (Loja.dinheiro >= 1500)
+        if (Loja.dinheiro >= Price)
         {
-            Loja.dinFloat -= 1500;
+            Loja.dinFloat -= Price;
             cadeado.SetActive(false);
             Button.SetActive(false);
             Carv.SetActive(true);

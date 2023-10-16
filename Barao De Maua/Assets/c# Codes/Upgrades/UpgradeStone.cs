@@ -30,7 +30,7 @@ public class UpgradeStone : MonoBehaviour
             PrevValueActive = PrevValue;
             Loja.dinFloat -= Price;
             PrevPrice = Price;
-            Price += (int) (PrevPriceActive);
+            Price += (int) ((PrevPriceActive) * 0.9f);
             PrevPriceActive = PrevPrice;            
         }
    }
