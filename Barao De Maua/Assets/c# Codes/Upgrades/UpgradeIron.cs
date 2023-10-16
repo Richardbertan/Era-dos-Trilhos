@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class UpgradeIron : MonoBehaviour
 {
-   public static int Price = 700;
-    public static float PrevPriceActive = 700f;
+   public static int Price = 7000;
+    public static float PrevPriceActive = 7000f;
     public static float PrevPrice;
 
     [SerializeField] Text PriTxt;
 
-    public static int PrevValueActive = 8;
+    public static int PrevValueActive = 25;
     public static int PrevValue;
 
     void Update ()

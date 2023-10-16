@@ -5,5 +5,9 @@ using UnityEngine.UI;
 
 public class carvao : MonoBehaviour
 {
-    public static float increaseRate = 12;
+    public static float increaseRate;
+    void OnEnable ()
+    {
+        increaseRate = 12;
+    } 
 }

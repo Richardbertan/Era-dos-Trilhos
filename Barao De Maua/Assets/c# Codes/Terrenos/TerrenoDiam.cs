@@ -1,16 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TerrenoDiam : MonoBehaviour
 {
     [SerializeField]
     GameObject cadeado;
+
     [SerializeField]
     GameObject Dima;
+    
     [SerializeField]
     GameObject Button;
-    int Price = 500;
+    
+    [SerializeField]
+    Text PriceTxt;
+
+    int Price = 50000;
     public void OnClick()
     {
         if (Loja.dinheiro >= Price)
@@ -20,5 +27,10 @@ public class TerrenoDiam : MonoBehaviour
             Button.SetActive(false);
             Dima.SetActive(true);
         }
+    }
+
+    void start ()
+    {
+        PriceTxt.text = Price.ToString();
     }
 }

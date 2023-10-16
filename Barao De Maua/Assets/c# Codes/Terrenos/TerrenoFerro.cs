@@ -1,16 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TerrenoFerro : MonoBehaviour
 {
     [SerializeField]
     GameObject cadeado;
+    
     [SerializeField]
     GameObject ferro;
+    
     [SerializeField]
     GameObject Button;
-    int Price = 500;
+    
+    [SerializeField]
+    Text PriceTxt;
+
+    int Price = 5000;
     public void OnClick()
     {
         if (Loja.dinheiro >= Price)
@@ -20,5 +27,10 @@ public class TerrenoFerro : MonoBehaviour
             Button.SetActive(false);
             ferro.SetActive(true);
         }
+    }
+
+     void start ()
+    {
+        PriceTxt.text = Price.ToString();
     }
 }

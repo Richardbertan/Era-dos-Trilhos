@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class UpgradeDiamond : MonoBehaviour
 {
-   public static int Price = 700;
-    public static float PrevPriceActive = 700f;
+   public static int Price = 70000;
+    public static float PrevPriceActive = 70000f;
     public static float PrevPrice;
 
     [SerializeField] Text PriTxt;
 
-    public static int PrevValueActive = 8;
+    public static int PrevValueActive = 100;
     public static int PrevValue;
 
     void Update ()
