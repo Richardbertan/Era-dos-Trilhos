@@ -26,6 +26,7 @@ public class TerrenoOuro : MonoBehaviour
             cadeado.SetActive(false);
             Button.SetActive(false);
             ouro.SetActive(true);
+            UpgradeGold.pode = true;
         }
     }
 

@@ -26,6 +26,7 @@ public class TerrenoPedra : MonoBehaviour
             cadeado.SetActive(false);
             Button.SetActive(false);
             Pedra.SetActive(true);
+            UpgradeStone.pode = true;
         }
     }
 

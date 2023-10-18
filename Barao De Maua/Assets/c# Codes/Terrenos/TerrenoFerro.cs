@@ -26,6 +26,7 @@ public class TerrenoFerro : MonoBehaviour
             cadeado.SetActive(false);
             Button.SetActive(false);
             ferro.SetActive(true);
+            UpgradeIron.pode = true;
         }
     }
 

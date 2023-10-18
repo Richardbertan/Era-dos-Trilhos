@@ -26,6 +26,7 @@ public class TerrenoCarv : MonoBehaviour
             cadeado.SetActive(false);
             Button.SetActive(false);
             Carv.SetActive(true);
+            UpgradeCoal.pode = true;
         }
     }
 

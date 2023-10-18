@@ -26,6 +26,7 @@ public class TerrenoDiam : MonoBehaviour
             cadeado.SetActive(false);
             Button.SetActive(false);
             Dima.SetActive(true);
+            UpgradeDiamond.pode = true;
         }
     }
 
