@@ -17,16 +17,19 @@ public class TerrenoDiam : MonoBehaviour
     [SerializeField]
     Text PriceTxt;
 
+    public static bool liberado = false;
+
     int Price = 50000;
     public void OnClick()
     {
-        if (Loja.dinheiro >= Price)
+        if (Loja.dinheiro >= Price || liberado)
         {
             Loja.dinFloat -= Price;
             cadeado.SetActive(false);
             Button.SetActive(false);
             Dima.SetActive(true);
             UpgradeDiamond.pode = true;
+            liberado = true;
         }
     }
 

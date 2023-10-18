@@ -11,6 +11,8 @@ public class Loja : MonoBehaviour
     public static float Click;
     [SerializeField]
     GameObject Historia;
+    [SerializeField]
+    GameObject Fim;
     void Start ()
     {
         Historia.SetActive(true);
@@ -25,5 +27,10 @@ public class Loja : MonoBehaviour
                 dinFloat += Click;
                 Click = 0;
             }
+            if (dinheiro >= 5000000)
+            {
+                Fim.SetActive(true);
+            }
     }
+
 }

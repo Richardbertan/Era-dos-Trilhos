@@ -1205,7 +1205,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Para ganhar mais dinheiro, clique na madeira.\r\nO trem abre a tela de
     upgrade.\r\nN\xE3o \xE9 poss\xEDvel dar upgrade em terrenos n\xE3o desbloqueados.\r\n\xC9
-    poss\xEDvel dar 7 upgrades por recurso.\r"
+    poss\xEDvel dar 7 upgrades por recurso.\r\nO seu objetivo \xE9 chegar em 1 milh\xE3o
+    o mais rapido possivel."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

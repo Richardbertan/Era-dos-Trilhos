@@ -17,16 +17,19 @@ public class TerrenoPedra : MonoBehaviour
     [SerializeField]
     Text PriceTxt;
 
+    public static bool liberado = false;
+
     int Price = 500;
     public void OnClick()
     {
-        if (Loja.dinheiro >= Price)
+        if (Loja.dinheiro >= Price || liberado)
         {
             Loja.dinFloat -= Price;
             cadeado.SetActive(false);
             Button.SetActive(false);
             Pedra.SetActive(true);
             UpgradeStone.pode = true;
+            liberado = true;
         }
     }
 

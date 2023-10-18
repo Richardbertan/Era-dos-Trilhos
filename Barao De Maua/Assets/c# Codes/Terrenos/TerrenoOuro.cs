@@ -17,16 +17,19 @@ public class TerrenoOuro : MonoBehaviour
     [SerializeField]
     Text PriceTxt;
 
+    public static bool liberado = false;
+
     int Price = 15000;
     public void OnClick()
     {
-        if (Loja.dinheiro >= Price)
+        if (Loja.dinheiro >= Price || liberado)
         {
             Loja.dinFloat -= Price;
             cadeado.SetActive(false);
             Button.SetActive(false);
             ouro.SetActive(true);
             UpgradeGold.pode = true;
+            liberado = true;
         }
     }
 

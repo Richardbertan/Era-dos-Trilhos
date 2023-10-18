@@ -17,16 +17,19 @@ public class TerrenoCarv : MonoBehaviour
     [SerializeField]
     Text PriceTxt;
 
+    public static bool liberado = false;
+
     int Price = 2000;
     public void OnClick()
     {
-        if (Loja.dinheiro >= Price)
+        if (Loja.dinheiro >= Price || liberado)
         {
             Loja.dinFloat -= Price;
             cadeado.SetActive(false);
             Button.SetActive(false);
             Carv.SetActive(true);
             UpgradeCoal.pode = true;
+            liberado = true;
         }
     }
 

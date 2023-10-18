@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class conectorDeCena1 : MonoBehaviour
 {
 
-    public void LoadSceneOnClick(string Jogo)
+    public void LoadSceneOnClick(string Menu)
     {
-        SceneManager.LoadScene(Jogo);
+        SceneManager.LoadScene(Menu);
     }
     
 }
