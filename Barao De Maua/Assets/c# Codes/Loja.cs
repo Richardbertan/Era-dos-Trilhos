@@ -9,6 +9,12 @@ public class Loja : MonoBehaviour
     [SerializeField] Text dinhTxt;  
     public static float dinFloat;
     public static float Click;
+    [SerializeField]
+    GameObject Historia;
+    void Start ()
+    {
+        Historia.SetActive(true);
+    }
     void FixedUpdate ()
     {
         dinheiro = (int) dinFloat;
