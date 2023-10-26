@@ -1928,19 +1928,11 @@ PlayableDirector:
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 5d7b54e8ebfa1f249bca00fdcb271c05, type: 2}
   m_InitialState: 1
-  m_WrapMode: 2
+  m_WrapMode: 1
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: 2793731319006953263, guid: 5d7b54e8ebfa1f249bca00fdcb271c05, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -5039204716219526170, guid: 5d7b54e8ebfa1f249bca00fdcb271c05, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 6979805089091426939, guid: 5d7b54e8ebfa1f249bca00fdcb271c05, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 5358923929002535702, guid: 5d7b54e8ebfa1f249bca00fdcb271c05, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 3431515564798337913, guid: 5d7b54e8ebfa1f249bca00fdcb271c05, type: 2}
+  - key: {fileID: -48565164961173096, guid: 5d7b54e8ebfa1f249bca00fdcb271c05, type: 2}
     value: {fileID: 1067248004}
   m_ExposedReferences:
     m_References: []
