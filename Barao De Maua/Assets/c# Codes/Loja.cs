@@ -6,30 +6,53 @@ using UnityEngine.UI;
 public class Loja : MonoBehaviour
 {
     public static int dinheiro;
+
     [SerializeField] Text dinhTxt;  
+
     public static float dinFloat;
+
     [SerializeField] int Cheat;
-    public static float Click;
+
     [SerializeField]
     GameObject Historia;
+
     [SerializeField]
     GameObject Fim;
+
+    [SerializeField]
+    GameObject TutorialObj;
+
+    [SerializeField]
+    GameObject recursos;
+
     static bool Cabo = true;
+
+    static bool Tutorial = true;
+
+    static bool TutorialFoi = false;
+
     void Start ()
     {
+        if (Tutorial)
+        {
         Historia.SetActive(true);
+        TutorialObj.SetActive(true);
+        Tutorial = false;
+        TutorialFoi = true;
+        }
+        if (TutorialFoi)
+        {
+            recursos.SetActive(true);
+        }
     }
+
     void FixedUpdate ()
     {
         dinheiro = (int) dinFloat;
         dinFloat += Cheat;
         dinFloat += ((madeira.increaseRate + pedra.increaseRate + carvao.increaseRate + ferro.increaseRate + ouro.increaseRate + diamante.increaseRate) * Time.deltaTime);
         dinhTxt.text = dinheiro.ToString();
-            if (Click > 0)
-            {
-                dinFloat += Click;
-                Click = 0;
-            }
+            
             if (dinheiro >= 500000 && Cabo)
             {
                 Fim.SetActive(true);
