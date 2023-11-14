@@ -29,8 +29,6 @@ public class Loja : MonoBehaviour
 
     static bool Tutorial = true;
 
-    static bool TutorialFoi = false;
-
     void Start ()
     {
         if (Tutorial)
@@ -38,11 +36,6 @@ public class Loja : MonoBehaviour
         Historia.SetActive(true);
         TutorialObj.SetActive(true);
         Tutorial = false;
-        TutorialFoi = true;
-        }
-        if (TutorialFoi)
-        {
-            recursos.SetActive(true);
         }
     }
 
