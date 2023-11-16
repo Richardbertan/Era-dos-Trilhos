@@ -42,7 +42,7 @@ public class UpgradeDiamond : MonoBehaviour
             PrevValueActive = PrevValue;
             PrevValue = (int) diamante.increaseRate;
             
-            nextValue = (int) (ouro.increaseRate +  PrevValueActive);
+            nextValue = (int) (diamante.increaseRate +  PrevValueActive);
 
             Loja.dinFloat -= Price;
 
