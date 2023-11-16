@@ -35,7 +35,7 @@ public class UpgradeWood : MonoBehaviour
 
     public void OnClick ()
     {
-        if (Loja.dinheiro >= Price && Upgrades<= 6)
+        if (Loja.dinheiro >= Price && Upgrades <= 6)
         {
             PrevValue = (int) madeira.increaseRate;
             madeira.increaseRate += PrevValueActive * 0.8f;
