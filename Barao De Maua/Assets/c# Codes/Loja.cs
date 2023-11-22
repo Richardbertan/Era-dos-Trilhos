@@ -37,6 +37,10 @@ public class Loja : MonoBehaviour
         TutorialObj.SetActive(true);
         Tutorial = false;
         }
+        if (Tutorial != true)
+        {
+            recursos.SetActive(true);
+        }
     }
 
     void FixedUpdate ()
