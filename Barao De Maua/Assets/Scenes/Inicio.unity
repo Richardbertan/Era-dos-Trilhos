@@ -178,12 +178,12 @@ PlayableDirector:
     value: {fileID: 2079677990}
   - key: {fileID: 0}
     value: {fileID: 0}
-  - key: {fileID: -2984486416738917282, guid: 6a53eb821f2f1784ea3a4ede9c4adbd8, type: 2}
-    value: {fileID: 1056410138}
   - key: {fileID: 3702999536957419241, guid: 6a53eb821f2f1784ea3a4ede9c4adbd8, type: 2}
     value: {fileID: 503904575}
   - key: {fileID: 239263074270786058, guid: 6a53eb821f2f1784ea3a4ede9c4adbd8, type: 2}
     value: {fileID: 760892936}
+  - key: {fileID: 3460825235147480922, guid: 6a53eb821f2f1784ea3a4ede9c4adbd8, type: 2}
+    value: {fileID: 2108135096}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &503904573
@@ -222,7 +222,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -766, y: 17}
+  m_AnchoredPosition: {x: -1225.3, y: 0}
   m_SizeDelta: {x: 530.5, y: 397.4367}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &503904575
@@ -500,7 +500,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000030517578}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -0.00012207, y: 0.0001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1056410136
@@ -630,7 +630,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 16777215
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -978,7 +978,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 16777215
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1066,3 +1066,47 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!1 &2108135096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2108135098}
+  - component: {fileID: 2108135097}
+  m_Layer: 0
+  m_Name: Acabo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2108135097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108135096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52f768fc1816b5940b8d94a7b7134b50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2108135098
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108135096}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 756.6478, y: 48.741714, z: -5.744095}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
