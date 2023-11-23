@@ -37,4 +37,15 @@ public class TerrenoOuro : MonoBehaviour
     {
         PriceTxt.text = Price.ToString();
     }
+
+    void Update ()
+    {
+        if (liberado)
+        {
+            cadeado.SetActive(false);
+            Button.SetActive(false);
+            ouro.SetActive(true);
+            UpgradeGold.pode = true;
+        }
+    }
 }

@@ -37,4 +37,15 @@ public class TerrenoFerro : MonoBehaviour
     {
         PriceTxt.text = Price.ToString();
     }
+
+    void Update ()
+    {
+        if (liberado)
+        {
+            cadeado.SetActive(false);
+            Button.SetActive(false);
+            ferro.SetActive(true);
+            UpgradeIron.pode = true;
+        }
+    }
 }

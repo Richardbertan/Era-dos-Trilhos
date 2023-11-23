@@ -37,4 +37,15 @@ public class TerrenoDiam : MonoBehaviour
     {
         PriceTxt.text = Price.ToString();
     }
+
+    void Update ()
+    {
+        if (liberado)
+        {
+            cadeado.SetActive(false);
+            Button.SetActive(false);
+            Dima.SetActive(true);
+            UpgradeDiamond.pode = true;
+        }
+    }
 }
