@@ -8,6 +8,6 @@ public class ferro : MonoBehaviour
     public static float increaseRate;
     void OnEnable ()
     {
-        increaseRate = 25f;
+        increaseRate = 58.752f;
     } 
 }
