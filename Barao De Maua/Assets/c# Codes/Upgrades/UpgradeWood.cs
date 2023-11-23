@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class UpgradeWood : MonoBehaviour
 {
     public static int Upgrades = 0;
-    public static int Price = 75;
-    public static float PrevPriceActive = 75f;
+    public static int Price = 45;
+    public static float PrevPriceActive = 45f;
     public static float PrevPrice;
 
     [SerializeField] Text PriTxt;
@@ -23,7 +23,7 @@ public class UpgradeWood : MonoBehaviour
     void Start ()
     {
         PrevValue = (int) madeira.increaseRate;
-        nextValue = (int) (madeira.increaseRate +  PrevValueActive * 0.8f);
+        nextValue = (int) (madeira.increaseRate + PrevValueActive);
     }
     
     void Update ()
@@ -37,20 +37,22 @@ public class UpgradeWood : MonoBehaviour
     {
         if (Loja.dinheiro >= Price && Upgrades <= 6)
         {
-            PrevValue = (int) madeira.increaseRate;
-            madeira.increaseRate += PrevValueActive * 0.8f;
+            madeira.increaseRate += PrevValueActive * 0.9f;
             PrevValueActive = PrevValue;
             PrevValue = (int) madeira.increaseRate;
 
-            nextValue = (int) (madeira.increaseRate +  PrevValueActive * 0.8f);
+            nextValue = (int) (madeira.increaseRate +  PrevValueActive * 0.9);
             
             Loja.dinFloat -= Price;
 
             PrevPrice = Price;
-            Price += (int) (PrevPriceActive * 1.2f);
+            Price += (int) (PrevPriceActive * 1.1);
             PrevPriceActive = PrevPrice; 
 
-            Upgrades++;        
+            Upgrades++;    
+            print ($"{madeira.increaseRate} increase");
+            print ($"{PrevValueActive} prevAct");    
+            print ($"{PrevValue} prev");
         }
    }
 }
