@@ -22,7 +22,7 @@ public class TerrenoPedra : MonoBehaviour
     int Price = 500;
     public void OnClick()
     {
-        if (Loja.dinheiro >= Price || liberado)
+        if (Loja.dinheiro >= Price)
         {
             Loja.dinFloat -= Price;
             cadeado.SetActive(false);
@@ -36,5 +36,15 @@ public class TerrenoPedra : MonoBehaviour
     void Start ()
     {
         PriceTxt.text = Price.ToString();
+    }
+    void Update ()
+    {
+        if (liberado)
+        {
+            cadeado.SetActive(false);
+            Button.SetActive(false);
+            Pedra.SetActive(true);
+            UpgradeStone.pode = true;
+        }
     }
 }

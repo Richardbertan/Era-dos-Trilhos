@@ -46,7 +46,7 @@ public class Loja : MonoBehaviour
     void FixedUpdate ()
     {
         dinheiro = (int) dinFloat;
-        dinFloat += Cheat;
+        dinFloat += Cheat * Time.deltaTime;
         dinFloat += ((madeira.increaseRate + pedra.increaseRate + carvao.increaseRate + ferro.increaseRate + ouro.increaseRate + diamante.increaseRate) * Time.deltaTime);
         dinhTxt.text = dinheiro.ToString();
             
