@@ -420,8 +420,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Jogo
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 608eb075b8bb2ac43a9527118902ebb0, type: 2}
+  m_sharedMaterial: {fileID: 4561021745226145143, guid: 608eb075b8bb2ac43a9527118902ebb0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1113,7 +1113,7 @@ RectTransform:
   - {fileID: 1358738227}
   - {fileID: 101632443}
   m_Father: {fileID: 1799740820}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3233,7 +3233,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &772850712
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3249,7 +3249,7 @@ RectTransform:
   - {fileID: 1718714294}
   - {fileID: 891274077}
   m_Father: {fileID: 1799740820}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6770,7 +6770,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1447035342
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6856,8 +6856,8 @@ MonoBehaviour:
     poss\xEDvel dar 7 upgrades por recurso.\r\nO seu objetivo \xE9 chegar em 500.000
     milh\xE3o o mais rapido possivel."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 608eb075b8bb2ac43a9527118902ebb0, type: 2}
+  m_sharedMaterial: {fileID: 4561021745226145143, guid: 608eb075b8bb2ac43a9527118902ebb0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8380,6 +8380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b7dc802798c80d419fcd6ddfaed6bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Box: {fileID: 0}
 --- !u!1 &1687888216
 GameObject:
   m_ObjectHideFlags: 0
@@ -8814,8 +8815,8 @@ RectTransform:
   - {fileID: 2024440466}
   - {fileID: 219673781}
   - {fileID: 1845669985}
-  - {fileID: 772850712}
   - {fileID: 194358672}
+  - {fileID: 772850712}
   - {fileID: 1447035342}
   m_Father: {fileID: 0}
   m_RootOrder: 2
