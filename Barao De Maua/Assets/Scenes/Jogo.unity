@@ -6770,7 +6770,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1447035342
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6828,8 +6828,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000031888, y: 0.00000095367}
-  m_SizeDelta: {x: 749.0216, y: 274.8376}
+  m_AnchoredPosition: {x: -0.0000016689, y: 52.8387}
+  m_SizeDelta: {x: 754.7849, y: 305.095}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1463881586
 MonoBehaviour:
@@ -6851,10 +6851,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Para ganhar mais dinheiro, clique na madeira.\r\nO trem abre a tela de
-    upgrade.\r\nN\xE3o \xE9 poss\xEDvel dar upgrade em terrenos n\xE3o desbloqueados.\r\n\xC9
-    poss\xEDvel dar 7 upgrades por recurso.\r\nO seu objetivo \xE9 chegar em 500.000
-    milh\xE3o o mais rapido possivel."
+  m_text: "Para ganhar mais dinheiro, clique na madeira.\r\n\nO trem abre a tela
+    de upgrade.\r\n\nN\xE3o \xE9 poss\xEDvel dar upgrade em terrenos n\xE3o desbloqueados.\n\r\n\xC9
+    poss\xEDvel dar somente 7 upgrades por recurso.\n\r\nO seu objetivo \xE9 chegar
+    em 500.000 mil o mais rapido possivel."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 608eb075b8bb2ac43a9527118902ebb0, type: 2}
   m_sharedMaterial: {fileID: 4561021745226145143, guid: 608eb075b8bb2ac43a9527118902ebb0, type: 2}
@@ -6917,7 +6917,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -1.4408569, y: -0.000000022218956, z: 0, w: 46.106636}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -8500,8 +8500,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11.547897, y: 64.33814}
-  m_SizeDelta: {x: 740.0002, y: 178.6763}
+  m_AnchoredPosition: {x: 5.15, y: 9.505}
+  m_SizeDelta: {x: 810.29, y: 421.01}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1718714295
 MonoBehaviour:
@@ -8523,10 +8523,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Bar\xE3o de Mau\xE1 (Irineu Evangelista), um industrial e pol\xEDtico
-    brasileiro. Pioneiro da industrializa\xE7\xE3o no Brasil, foi um s\xEDmbolo dos
-    empreendedores brasileiros do s\xE9culo XIX\r\nNesse jogo voc\xEA \xE9 um empres\xE1rio,
-    gerenciando o dinheiro e a abertura de novas produ\xE7\xF5es e terrenos.\r"
+  m_text: "          Ol\xE1! Seja bem-vindo a era dos trilhos!\r\n\n Meu nome \xE9
+    Irineu Evangelista, mais conhecido como Bar\xE3o De Mau\xE1, sou um pol\xEDtico
+    e industrial brasileiro. Sou pioneiro da industrializa\xE7\xE3o no Brasil, fiquei
+    muito conhecido ap\xF3s a constru\xE7\xE3o da primeira ferrovia brasileira, no
+    dia 30 de abril de 1854.\r\n  Nesse jogo voc\xEA \xE9 um empres\xE1rio, gerenciando
+    o dinheiro e a abertura de novas produ\xE7\xF5es e terrenos. \r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8589,7 +8591,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 1.9913632, y: -5.4680786, z: 10.018951, w: 24.476519}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
