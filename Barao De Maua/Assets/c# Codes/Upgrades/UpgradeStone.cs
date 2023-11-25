@@ -7,8 +7,8 @@ public class UpgradeStone : MonoBehaviour
 {
     public static bool pode = false;
     public static int Upgrades = 0;
-    public static int Price = 700;
-    public static float PrevPriceActive = 700f;
+    public static int Price = 650;
+    public static float PrevPriceActive = 650f;
     public static float PrevPrice;
 
     [SerializeField] Text PriTxt;
@@ -17,7 +17,7 @@ public class UpgradeStone : MonoBehaviour
     [SerializeField] Text nextValueTxt;
     public static int nextValue;
 
-    public static int PrevValueActive = 8;
+    public static float PrevValueActive = 15;
     public static int PrevValue;
 
     void Start ()
@@ -37,7 +37,6 @@ public class UpgradeStone : MonoBehaviour
     {
         if (Loja.dinheiro >= Price && Upgrades <= 6 && pode)
         {
-            PrevValue = (int) pedra.increaseRate;
             pedra.increaseRate += PrevValueActive;
             PrevValueActive = PrevValue;
             PrevValue = (int) pedra.increaseRate;
@@ -47,7 +46,7 @@ public class UpgradeStone : MonoBehaviour
             Loja.dinFloat -= Price;
 
             PrevPrice = Price;
-            Price += (int) ((PrevPriceActive));
+            Price += (int) (PrevPriceActive);
             PrevPriceActive = PrevPrice;       
 
             Upgrades++;     
