@@ -8,6 +8,6 @@ public class ouro : MonoBehaviour
     public static float increaseRate;
     void OnEnable ()
     {
-        increaseRate = 117.5f;
+        increaseRate = 135f;
     } 
 }

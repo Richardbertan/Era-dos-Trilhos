@@ -7,8 +7,8 @@ public class UpgradeStone : MonoBehaviour
 {
     public static bool pode = false;
     public static int Upgrades = 0;
-    public static int Price = 650;
-    public static float PrevPriceActive = 650f;
+    public static int Price = 425;
+    public static float PrevPriceActive = 425f;
     public static float PrevPrice;
 
     [SerializeField] Text PriTxt;

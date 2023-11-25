@@ -19,7 +19,7 @@ public class TerrenoFerro : MonoBehaviour
 
     public static bool liberado = false;
 
-    int Price = 5000;
+    int Price = 3500;
     public void OnClick()
     {
         if (Loja.dinheiro >= Price || liberado)

@@ -10,7 +10,7 @@ public class madeira : MonoBehaviour
 
     public void OnClick ()
     {
-        ClickIncrease = 2f + increaseRate/10;
+        ClickIncrease = 2f + increaseRate/50;
         Loja.dinFloat += ClickIncrease;
         print (increaseRate);
     }

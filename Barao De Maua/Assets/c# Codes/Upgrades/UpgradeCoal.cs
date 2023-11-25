@@ -7,8 +7,8 @@ public class UpgradeCoal : MonoBehaviour
 {
     public static bool pode = false;
     public static int Upgrades = 0;
-   public static int Price = 2500;
-    public static float PrevPriceActive = 2500f;
+   public static int Price = 1750;
+    public static float PrevPriceActive = 1750f;
     public static float PrevPrice;
 
     [SerializeField] Text PriTxt;
@@ -17,7 +17,7 @@ public class UpgradeCoal : MonoBehaviour
     [SerializeField] Text nextValueTxt;
     public static int nextValue;
 
-    public static int PrevValueActive = 12;
+    public static int PrevValueActive = 30;
     public static int PrevValue;
 
     void Start ()

@@ -19,7 +19,7 @@ public class TerrenoCarv : MonoBehaviour
 
     public static bool liberado = false;
 
-    int Price = 2000;
+    int Price = 1000;
     public void OnClick()
     {
         if (Loja.dinheiro >= Price || liberado)

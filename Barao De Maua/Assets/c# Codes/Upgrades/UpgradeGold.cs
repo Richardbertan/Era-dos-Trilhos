@@ -17,13 +17,13 @@ public class UpgradeGold : MonoBehaviour
     [SerializeField] Text nextValueTxt;
     public static int nextValue;
 
-    public static int PrevValueActive = 50;
+    public static int PrevValueActive = 135;
     public static int PrevValue;
 
     void Start ()
     {
         PrevValue = (int) PrevValueActive;
-        nextValue = (int) (PrevValueActive +  PrevValueActive);
+        nextValue = (int) (PrevValueActive +  PrevValueActive * 2);
     }
 
     void Update ()
@@ -38,11 +38,11 @@ public class UpgradeGold : MonoBehaviour
         if (Loja.dinheiro >= Price && Upgrades <= 6 && pode)
         {
             PrevValue = (int) ouro.increaseRate;
-            ouro.increaseRate += PrevValueActive;
+            ouro.increaseRate += PrevValueActive * 2;
             PrevValueActive = PrevValue;
             PrevValue = (int) ouro.increaseRate;
 
-            nextValue = (int) (ouro.increaseRate +  PrevValueActive);
+            nextValue = (int) (ouro.increaseRate +  PrevValueActive * 2);
 
             Loja.dinFloat -= Price;
 
